@@ -50,8 +50,9 @@ class _CalculationScreenState extends State<CalculationScreen> {
                     SizedBox(height: 25),
                     TextFormField(
                       keyboardType: TextInputType.number,
-                      decoration:
-                          InputDecoration(labelText: "อัตราดอกเบี้ย (%)"),
+                      decoration: InputDecoration(
+                        labelText: "อัตราดอกเบี้ย (%)",
+                      ),
                       onChanged: (value) {
                         setState(() {
                           interest_rate = double.parse(value);
